@@ -21,7 +21,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         //实例化数据库
         dbHelper = new MyDatabaseHelper(this,"User.db",null,1);
-
+        //创建数据库成功且执行了创建user表操作
+        dbHelper.getWritableDatabase();
+        //Toast.makeText(Login.this,"create database successed!",Toast.LENGTH_LONG).show();
         //监听按钮事件
         Button login = (Button)findViewById(R.id.login);
         login.setOnClickListener(this);
@@ -31,21 +33,23 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.login:
-                //创建数据库成功且执行了创建user表操作
-                dbHelper.getWritableDatabase();
-                Toast.makeText(Login.this,"create database successed!",Toast.LENGTH_LONG).show();
+
                 //1、获取页面信息
                 EditText editText1 = (EditText)findViewById(R.id.username);
                 String username = editText1.getText().toString();
                 EditText editText2 = (EditText)findViewById(R.id.password);
                 String password = editText2.getText().toString();
+
+                //Toast.makeText(Login.this,username + password,Toast.LENGTH_SHORT).show();
+
                 //2、查询数据库存储的信息
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
-                Cursor c = db.query("user",null,null,null,null,null,null);
+                Cursor c = db.query("user_base",null,null,null,null,null,null);
                 if (c.moveToFirst()){
                     do {
                         String usernamefordatabases = c.getString(c.getColumnIndex("username"));
                         String passwordfordatabases = c.getString(c.getColumnIndex("password"));
+                        //Toast.makeText(Login.this,usernamefordatabases+passwordfordatabases,Toast.LENGTH_SHORT).show();
                         //3、用户填写的用户名和密码与数据库用户名密码进行比较
                         if (username.equals(usernamefordatabases)){
                             if (password.equals(passwordfordatabases)){
