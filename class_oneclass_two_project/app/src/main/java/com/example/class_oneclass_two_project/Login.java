@@ -1,5 +1,6 @@
 package com.example.class_oneclass_two_project;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -27,21 +28,26 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
         //监听按钮事件
         Button login = (Button)findViewById(R.id.login);
         login.setOnClickListener(this);
+        //注册
+        Button r = (Button)findViewById(R.id.Sign_in);
+        r.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            //注册跳转
+            case R.id.Sign_in:
+                Intent i = new Intent(Login.this,Register.class);
+                startActivity(i);
+                break;
             case R.id.login:
-
                 //1、获取页面信息
                 EditText editText1 = (EditText)findViewById(R.id.username);
                 String username = editText1.getText().toString();
                 EditText editText2 = (EditText)findViewById(R.id.password);
                 String password = editText2.getText().toString();
-
-                //Toast.makeText(Login.this,username + password,Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(Login.this,username + password,Toast.LENGTH_SHORT).show();
                 //2、查询数据库存储的信息
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
                 Cursor c = db.query("user_base",null,null,null,null,null,null);
@@ -49,7 +55,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
                     do {
                         String usernamefordatabases = c.getString(c.getColumnIndex("username"));
                         String passwordfordatabases = c.getString(c.getColumnIndex("password"));
-                        //Toast.makeText(Login.this,usernamefordatabases+passwordfordatabases,Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this,usernamefordatabases+passwordfordatabases,Toast.LENGTH_SHORT).show();
                         //3、用户填写的用户名和密码与数据库用户名密码进行比较
                         if (username.equals(usernamefordatabases)){
                             if (password.equals(passwordfordatabases)){
