@@ -19,7 +19,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.register);
         Button back = (Button)findViewById(R.id.back);
         back.setOnClickListener(this);
-        dbHelper = new MyDatabaseHelper(this,"User.db",null,1);
+        dbHelper = new MyDatabaseHelper(this,"User.db",null,2);
         Button sign = (Button)findViewById(R.id.Sign);
         sign.setOnClickListener(this);
     }

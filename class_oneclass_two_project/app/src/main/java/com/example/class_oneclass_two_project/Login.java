@@ -21,7 +21,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         //实例化数据库
-        dbHelper = new MyDatabaseHelper(this,"User.db",null,1);
+        dbHelper = new MyDatabaseHelper(this,"User.db",null,2);
         //创建数据库成功且执行了创建user表操作
         dbHelper.getWritableDatabase();
         //Toast.makeText(Login.this,"create database successed!",Toast.LENGTH_LONG).show();

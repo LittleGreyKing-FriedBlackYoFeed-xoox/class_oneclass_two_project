@@ -47,6 +47,7 @@
 
 
                     <RelativeLayout
+                        android:id="@+id/onclick_select"
                         android:layout_width="fill_parent"
                         android:layout_height="50dp">
 
@@ -92,6 +93,7 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/click_add"
                         android:layout_width="match_parent"
                         android:layout_height="50dp">
                         <TextView
@@ -221,6 +223,7 @@
             android:background="#ffffffff">
 
             <Button
+                android:id="@+id/back_finish"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
