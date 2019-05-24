@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_new_meeting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#eee">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff0f0f0"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp">
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffeeeeee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffffff"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp">
+
+
+                        <TextView
+                            android:id="@+id/star2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="*"
+                            android:textColor="#ff4824"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="1dp"
+                            android:layout_toRightOf="@id/star2"
+                            android:text="SELECT"
+                            android:textColor="#ff333333"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/dateDisplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_alignParentRight="true"
+                            android:text="Check to view"
+                            android:textColor="#ff999999"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#ffeeeeee" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <TextView
+                            android:id="@+id/star3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="*"
+                            android:textColor="#ff4824"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="1dp"
+                            android:layout_toRightOf="@id/star3"
+                            android:text="ADD"
+                            android:textColor="#ff333333"
+                            android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/timeDisplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:text="Click Add"
+                            android:textColor="#ff999999"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffeeeeee" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+
+                        <TextView
+                            android:id="@+id/star4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="*"
+                            android:textColor="#ff4824"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="1dp"
+                            android:layout_toRightOf="@id/star4"
+                            android:text="UPDATE"
+                            android:textColor="#ff333333"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/endtimeDisplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/textView"
+                            android:layout_alignBottom="@+id/textView"
+                            android:layout_marginRight="25dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentRight="true"
+                            android:text="Click update"
+                            android:textColor="#ff999999"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffeeeeee" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffffff">
+
+
+                    <TextView
+                        android:id="@+id/tv_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="26dp"
+                        android:text="DELETE"
+                        android:textColor="#ff333333"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ffeeeeee" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffeeeeee" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="#ffffffff">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="small yellow book"
+                android:textColor="#ff333333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="sure"
+                android:textColor="#ff4a90e2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#ffd8d8d8" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

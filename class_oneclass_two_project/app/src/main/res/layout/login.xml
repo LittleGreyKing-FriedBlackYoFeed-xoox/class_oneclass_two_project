@@ -9,69 +9,81 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/background"
+        android:background="@drawable/bg"
         android:gravity="center">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="30dp"
             android:paddingTop="20dp"
-            android:background="#99404348"
+            android:background="#00323232"
             android:gravity="center">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Welcome"
-                android:textColor="#FFFFFF"
+                android:textColor="#030303"
                 android:textSize="18sp"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#00323232"
             android:orientation="vertical"
-            android:paddingBottom="20dp"
             android:paddingTop="20dp"
-            android:background="#99000000">
+            android:paddingBottom="20dp">
+
             <EditText
                 android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
                 android:layout_gravity="center"
-                android:layout_marginRight="50dp"
                 android:layout_marginLeft="50dp"
-                android:textColor="#9F9FA0"
-                android:textColorHint="#9F9FA0"
-                android:hint="your username"/>
+                android:layout_marginRight="50dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/username"
+                android:hint="your username"
+                android:textColor="#030303"
+                android:textColorHint="#030303" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dip"
-                android:background="#83738F"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="5dp"></View>
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ebebeb"></View>
 
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
                 android:layout_gravity="center"
-                android:hint="your password"
-                android:textColor="#9F9FA0"
-                android:textColorHint="#9F9FA0"
                 android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"/>
+                android:layout_marginRight="50dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/password"
+                android:hint="your password"
+                android:textColor="#030303"
+                android:textColorHint="#030303" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ebebeb"></View>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="30dp"
             android:paddingTop="20dp"
-            android:background="#99404348"
+            android:background="#00323232"
             android:gravity="center"
             android:orientation="horizontal">
             <TextView
@@ -79,21 +91,22 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Forget Password?"
-                android:textColor="#DDDDDD"
+                android:textColor="#030303"
                 android:textSize="15sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Tap Here"
-                android:textColor="#FFFFFF"
+                android:textColor="#030303"
                 android:textSize="15sp"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="#00323232">
             <Button
                 android:id="@+id/login"
                 android:layout_width="wrap_content"

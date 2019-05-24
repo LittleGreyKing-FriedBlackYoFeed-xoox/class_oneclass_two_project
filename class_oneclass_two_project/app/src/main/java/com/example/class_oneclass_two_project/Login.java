@@ -55,11 +55,14 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
                     do {
                         String usernamefordatabases = c.getString(c.getColumnIndex("username"));
                         String passwordfordatabases = c.getString(c.getColumnIndex("password"));
-                        Toast.makeText(Login.this,usernamefordatabases+passwordfordatabases,Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(Login.this,usernamefordatabases+passwordfordatabases,Toast.LENGTH_SHORT).show();
                         //3、用户填写的用户名和密码与数据库用户名密码进行比较
                         if (username.equals(usernamefordatabases)){
                             if (password.equals(passwordfordatabases)){
-                                Toast.makeText(Login.this,"Login successed!",Toast.LENGTH_SHORT).show();
+                                //4、跳转到书目列表
+                                Intent b = new Intent(Login.this,Book.class);
+                                startActivity(b);
+                                //Toast.makeText(Login.this,"Login successed!",Toast.LENGTH_SHORT).show();
                             }else{
                                 Toast.makeText(Login.this,"password error,please check try again latter!",Toast.LENGTH_SHORT).show();
                             }
