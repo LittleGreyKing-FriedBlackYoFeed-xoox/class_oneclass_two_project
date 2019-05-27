@@ -16,7 +16,7 @@ public class BookList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.booklist);
+        setContentView(R.layout.book_list);
         dbHelper = new MyDatabaseHelper(this,"User.db",null,2);
         bookList = new ArrayList<BookEntity>();
         SQLiteDatabase db = dbHelper.getWritableDatabase();
