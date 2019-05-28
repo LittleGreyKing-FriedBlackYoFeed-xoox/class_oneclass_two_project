@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffffff">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
         <EditText
             android:id="@+id/search_by_book_name"
-            android:layout_width="match_parent"
+            android:layout_width="280dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="book name"
+            android:padding="15dp"
+            android:textColor="#030303"
+            android:textColorHint="#030303" />
+
+        <ImageView
+            android:id="@+id/search_button_image"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="book name"/>
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="-40dp"
+            android:src="@drawable/delete" />
+
         <Button
             android:id="@+id/search_go"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="select"/>
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="-40dp"
+            android:text="search" />
     </LinearLayout>
 </LinearLayout>

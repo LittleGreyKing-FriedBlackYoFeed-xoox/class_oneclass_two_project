@@ -1,4 +1,4 @@
-package com.example.class_oneclass_two_project;
+package com.example.class_oneclass_two_project.book;
 
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
@@ -9,7 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.nio.Buffer;
+import com.example.class_oneclass_two_project.R;
+import com.example.class_oneclass_two_project.util.MyDatabaseHelper;
 
 public class BookAdd extends AppCompatActivity implements View.OnClickListener{
     private MyDatabaseHelper dbHelper;

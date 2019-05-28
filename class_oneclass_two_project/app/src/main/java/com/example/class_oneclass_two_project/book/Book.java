@@ -1,4 +1,4 @@
-package com.example.class_oneclass_two_project;
+package com.example.class_oneclass_two_project.book;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.class_oneclass_two_project.R;
 
 public class Book extends AppCompatActivity implements View.OnClickListener{
     @Override

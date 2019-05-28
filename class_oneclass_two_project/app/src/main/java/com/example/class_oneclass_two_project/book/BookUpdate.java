@@ -1,4 +1,4 @@
-package com.example.class_oneclass_two_project;
+package com.example.class_oneclass_two_project.book;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.example.class_oneclass_two_project;
+package com.example.class_oneclass_two_project.user;
 
 public class UserBase {
     private Integer id;

@@ -1,4 +1,4 @@
-package com.example.class_oneclass_two_project;
+package com.example.class_oneclass_two_project.user;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -10,6 +10,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.class_oneclass_two_project.book.Book;
+import com.example.class_oneclass_two_project.R;
+import com.example.class_oneclass_two_project.util.MyDatabaseHelper;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
     private MyDatabaseHelper dbHelper;

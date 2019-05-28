@@ -1,15 +1,16 @@
-package com.example.class_oneclass_two_project;
+package com.example.class_oneclass_two_project.user;
 
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.example.class_oneclass_two_project.R;
+import com.example.class_oneclass_two_project.util.MyDatabaseHelper;
 
 public class Register extends AppCompatActivity implements View.OnClickListener{
     private MyDatabaseHelper dbHelper;

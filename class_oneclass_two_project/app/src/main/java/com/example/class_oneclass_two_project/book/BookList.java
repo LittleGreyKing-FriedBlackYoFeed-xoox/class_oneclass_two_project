@@ -1,4 +1,4 @@
-package com.example.class_oneclass_two_project;
+package com.example.class_oneclass_two_project.book;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.class_oneclass_two_project.R;
+import com.example.class_oneclass_two_project.util.MyDatabaseHelper;
 
 import java.util.ArrayList;
 import java.util.List;
