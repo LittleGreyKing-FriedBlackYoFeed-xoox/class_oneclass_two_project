@@ -30,15 +30,15 @@ public class BookDelete extends AppCompatActivity implements View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.search_go:
-                EditText editText1 = (EditText)findViewById(R.id.search_username);
+                EditText editText1 = (EditText)findViewById(R.id.search_by_book_name);
                 String book_name = editText1.getText().toString();
                 //Toast.makeText(BookDelete.this,book_name,Toast.LENGTH_SHORT).show();
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
                 //select null1 from tableName where null2=null3 group by null4 having null5 order by null6
-                Cursor c = db.query("book",new String[]{"book_name,press,price,pages,writer"},"book_name = " + book_name,null,null,null,null);
+                Cursor c = db.query("book",null,null,null,null,null,null);
                 while(c.moveToNext()){
-                    int id = c.getInt(c.getColumnIndex("book_name"));
-                    Toast.makeText(BookDelete.this,id,Toast.LENGTH_SHORT).show();
+                    String book_name1 = c.getString(c.getColumnIndex("book_name"));
+                    Toast.makeText(BookDelete.this,book_name1,Toast.LENGTH_SHORT).show();
                 }
                 break;
         }

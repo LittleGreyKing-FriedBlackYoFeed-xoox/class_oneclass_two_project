@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/search_username"
+            android:id="@+id/search_by_book_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="book name"/>
